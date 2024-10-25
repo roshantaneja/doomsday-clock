@@ -14,8 +14,8 @@ def countdown(target_date):
         hours, remainder = divmod(time_remaining.seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
 
-        return(f"{days}:{hours}:{minutes}:{seconds}")
-
+        return(f"{days.zfill(2)}:{hours.zfill(2)}:{minutes.zfill(2)}:{seconds.zfill(2)}")
+    
 def countdown_gui(target_date):
 
     pygame.init()
@@ -25,9 +25,7 @@ def countdown_gui(target_date):
 
     font = pygame.font.Font(None, 200)
     text = font.render("", True, (255, 255, 255))
-    text_rect = text.get_rect(center=(info.current_w, info.current_h))
-
-    
+    # text_rect = text.get_rect(center=(info.current_w/2 - text.get_wi, info.current_h/2))
 
     running = True
     while running:
@@ -39,8 +37,8 @@ def countdown_gui(target_date):
         time_remaining = countdown(target_date)
         title = font.render("Countdown to Homecomp", True, (255, 255, 255))
         text = font.render(time_remaining, True, (255, 75, 75))
-        screen.blit(text, text_rect)
-        screen.blit(title, (200, 100))
+        screen.blit(text, (info.current_w/2 - text.get_width()/2, info.current_h/2 - text.get_height()/2))
+        screen.blit(title, (info.current_w/2 - title.get_width()/2, 100))
         pygame.display.flip()
 
     pygame.quit()
