@@ -25,7 +25,7 @@ def countdown_gui(target_date):
 
     font = pygame.font.Font(None, 200)
     text = font.render("", True, (255, 255, 255))
-    text_rect = text.get_rect(center=(700, 700))
+    text_rect = text.get_rect(center=(info.current_w, info.current_h))
 
     
 
