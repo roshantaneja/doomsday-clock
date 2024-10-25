@@ -14,8 +14,11 @@ def countdown(target_date):
         hours, remainder = divmod(time_remaining.seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
 
-        return(f"{days.zfill(2)}:{hours.zfill(2)}:{minutes.zfill(2)}:{seconds.zfill(2)}")
-    
+        return(f"{days} days, {z(hours)}:{z(minutes)}:{z(seconds)}")
+
+def z(number):
+    return str(number).zfill(2)
+
 def countdown_gui(target_date):
 
     pygame.init()
