@@ -26,7 +26,7 @@ def countdown_gui(target_date):
     screen = pygame.display.set_mode((info.current_w, info.current_h), pygame.FULLSCREEN)
     pygame.display.set_caption("Countdown to Doomsday")
 
-    font = pygame.font.Font("digital-7 (mono).ttf", info.current_h//5)
+    font = pygame.font.Font("digital-7 (mono).ttf", info.current_h//4)
     text = font.render("", True, (255, 255, 255))
     # text_rect = text.get_rect(center=(info.current_w/2 - text.get_wi, info.current_h/2))
 
