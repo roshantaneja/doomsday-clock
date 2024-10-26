@@ -26,7 +26,7 @@ def countdown_gui(target_date):
     screen = pygame.display.set_mode((info.current_w, info.current_h), pygame.FULLSCREEN)
     pygame.display.set_caption("Countdown to Doomsday")
 
-    font = pygame.font.Font(None, 200)
+    font = pygame.font.Font(None, 400)
     text = font.render("", True, (255, 255, 255))
     # text_rect = text.get_rect(center=(info.current_w/2 - text.get_wi, info.current_h/2))
 
@@ -38,10 +38,10 @@ def countdown_gui(target_date):
 
         screen.fill((0, 0, 0))
         time_remaining = countdown(target_date)
-        title = font.render("Countdown to Homecomp", True, (255, 255, 255))
+        # title = font.render("Countdown to Homecomp", True, (255, 255, 255))
         text = font.render(time_remaining, True, (255, 75, 75))
         screen.blit(text, (info.current_w/2 - text.get_width()/2, info.current_h/2 - text.get_height()/2))
-        screen.blit(title, (info.current_w/2 - title.get_width()/2, 100))
+        # screen.blit(title, (info.current_w/2 - title.get_width()/2, 100))
         pygame.display.flip()
 
     pygame.quit()
