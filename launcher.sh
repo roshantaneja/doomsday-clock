@@ -4,5 +4,5 @@
 
 cd /
 cd home/roshan/Downloads/doomsday-clock
-sudo python3 doomsday-clock.py
+sudo python3 doomsday.py
 cd /
