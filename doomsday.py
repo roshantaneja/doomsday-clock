@@ -14,7 +14,7 @@ def countdown(target_date):
         hours, remainder = divmod(time_remaining.seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
 
-        return(f"{days}:{z(hours)}:{z(minutes)}:{z(seconds)}")
+        return(f"{z(days)}:{z(hours)}:{z(minutes)}:{z(seconds)}")
 
 def z(number):
     return str(number).zfill(2)
