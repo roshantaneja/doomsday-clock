@@ -1,6 +1,11 @@
 import datetime
 import pygame
 
+target_year = 2024
+target_month = 11
+target_day = 16
+target_hour = 10
+
 def countdown(target_date):
     """Counts down the days, hours, minutes, and seconds until the target date."""
 
@@ -47,10 +52,5 @@ def countdown_gui(target_date):
     pygame.quit()
 
 if __name__ == "__main__":
-    target_year = 2024
-    target_month = 11
-    target_day = 16
-    target_hour = 10
-
     target_date = datetime.datetime(target_year, target_month, target_day, target_hour)
     countdown_gui(target_date)
