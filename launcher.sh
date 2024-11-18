@@ -4,5 +4,5 @@
 
 cd /
 cd home/roshan/doomsday-clock
-sudo python3 doomsday.py
-cd /
+git pull
+python3 doomsday.py
