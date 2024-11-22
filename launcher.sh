@@ -4,5 +4,6 @@
 
 cd /
 cd home/roshan/doomsday-clock
+git stash
 git pull
 python3 doomsday.py
