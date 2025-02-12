@@ -1,5 +1,6 @@
 import datetime
 import os
+import time
 
 target_year = 2025
 target_month = 5
@@ -31,9 +32,7 @@ def countdown_cli(target_date):
         os.system("clear")
         time_remaining = countdown(target_date)
         print(time_remaining)
-        if time_remaining == "00:00:00:00":
-            print("Countdown complete!")
-            break
+        time.sleep(1)
 
 if __name__ == "__main__":
     target_date = datetime.datetime(target_year, target_month, target_day, target_hour)
