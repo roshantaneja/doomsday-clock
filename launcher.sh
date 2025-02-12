@@ -17,4 +17,4 @@ pwd
 
 git stash
 git pull
-python3 doomsday.py
+python3 doomsday-cli.py
