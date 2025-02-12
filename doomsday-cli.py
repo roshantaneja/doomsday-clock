@@ -4,7 +4,7 @@ import time
 
 target_year = 2025
 target_month = 5
-target_day = 26
+target_day = 23
 target_hour = 20
 
 def countdown(target_date):
