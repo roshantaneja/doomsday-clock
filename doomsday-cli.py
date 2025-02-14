@@ -49,7 +49,7 @@ def countdown_cli(target_date):
 def countdown_ascii(target_date):
     #generate ascii art text of the target date number
     time_remaining = countdown(target_date)
-    font = ImageFont.truetype('F25_Bank_Printer.ttf', 25) #load the font
+    font = ImageFont.truetype('digital-7 (mono).ttf', 40) #load the font
     size = font.getbbox(time_remaining)[2:]  #calc the size of text in pixels
     image = Image.new('1', size, 1)  #create a b/w image
     draw = ImageDraw.Draw(image)
